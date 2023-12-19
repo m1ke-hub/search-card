@@ -103,13 +103,6 @@ class SearchCard extends ct.LitElement {
     return elem;
   }
 
-
-  _clearInput()
-  {
-    this.shadowRoot.getElementById('searchText').value = '';
-    this._updateSearchResults('');
-  }
-
   _valueChanged(ev) {
     var searchText = ev.target.value;
     this._updateSearchResults(searchText);
