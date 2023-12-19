@@ -64,14 +64,6 @@ class SearchCard extends ct.LitElement {
               label="${this.search_text}"
             >
               <ha-icon icon="mdi:magnify" id="searchIcon" slot="leadingIcon"></ha-icon>
-              <ha-icon-button
-                slot="trailingIcon"
-                @click="${this._clearInput}"
-                alt="Clear"
-                title="Clear"
-              >
-                <ha-icon icon="mdi:close"></ha-icon>
-              </ha-icon-button>
             </ha-textfield>
           </div>
 
